@@ -26,14 +26,33 @@
     <main>
         <form action="">
             <label for="nomesobrenome">Nome e sobrenome</label>
-            <input type="text" id="nomesobrenome" name="nomesobrenome">
+            <input type="text" id="nomesobrenome" name="nomesobrenome" class="input-padrao">
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" class="input-padrao">
 
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" name="telefone">
+            <input type="text" id="telefone" name="telefone" class="input-padrao">
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="input-padrao"></textarea>
 
+            <div>
+                <p>Como prefere o nosso contato?</p>
+                <label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email"> E-mail</label>
+                <label for="radio-telefone"><input type="radio" value="telefone" name="contato" id="radio-telefone"> Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" value="whatsapp" name="contato"  id="radio-whatsapp"> Whatsapp</label>
+            </div>
+            <div>
+                <p>Qual horário prefere  ser atendido?</p>
+                <select name="" id="">
+                    <option>Selecione o horário</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+            <label><input class="checkbox"  type="checkbox"> Gostaria de receber nossas novidades por emai?</label>
             <input type="submit" value="Enviar formulário">
         </form>
 
